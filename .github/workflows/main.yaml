@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v4.0.0
+
