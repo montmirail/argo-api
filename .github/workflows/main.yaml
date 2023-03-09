@@ -6,7 +6,8 @@ on:
 
 jobs:
   build:
-    - 
-      name: Build and push Docker images
-      uses: docker/build-push-action@v4.0.0
+    steps:
+      - 
+        name: Build and push Docker images
+        uses: docker/build-push-action@v4.0.0
 
